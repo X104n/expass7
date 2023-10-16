@@ -6,4 +6,6 @@ module com.example.expass7 {
 
     opens com.example.expass7 to javafx.fxml;
     exports com.example.expass7;
+    exports com.example.expass7.exp2;
+    opens com.example.expass7.exp2 to javafx.fxml;
 }
