@@ -12,6 +12,7 @@ public class NewTask {
         factory.setHost("localhost");
 
         try (Connection connection = factory.newConnection();
+
              Channel channel = connection.createChannel()) {
 
                 channel.queueDeclare(TASK_QUEUE_NAME, true, false, false, null);
